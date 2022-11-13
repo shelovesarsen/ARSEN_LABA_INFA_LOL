@@ -1,0 +1,14 @@
+from figures.figurecolor import *
+
+from figurecolor import FigureColor
+
+class Rectange():
+
+    def __inti__(self,width=20,height=10,color=FigureColor()):
+        self.__width = width
+        self.__height = height
+        self.__color = color
+        self.__area = width * height
+
+    def __repr__(self):
+        return f"Прямоугольник площадью {self.__area}, цвет: {str(self._color)}"
